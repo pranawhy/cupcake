@@ -1,0 +1,107 @@
+/* Base Styles */
+body {
+    margin-top: 50px;
+    padding: 0;
+    background: rgb(159, 206, 246);
+    font-size: 1.25rem; /* 20px equivalent */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    overflow: auto;
+  }
+  
+  a {
+    color: #000;
+    font-size: 0.875rem; /* 14px equivalent */
+  }
+  
+  #main {
+    width: 100%;
+  }
+  
+  #wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1100px;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  #text {
+    font-size: larger;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    position: absolute;
+    left: 5%;
+    top: 80px;
+  }
+  
+  #code {
+    display: none;
+    font-size: 1rem;
+  }
+  
+  #canvas {
+    display: block;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    aspect-ratio: 16 / 10; /* Maintains aspect ratio on resize */
+    margin: 0 auto;
+  }
+  
+  #error {
+    margin: 60px auto 0;
+    text-align: center;
+    display: none;
+  }
+  
+  .hand {
+    cursor: pointer;
+  }
+  
+  .say {
+    margin-left: 5px;
+  }
+  
+  .space {
+    margin-right: 150px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    #wrap {
+      width: 95%;
+      height: auto;
+    }
+  
+    #text {
+      position: static;
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    #canvas {
+      aspect-ratio: 4 / 3;
+    }
+  
+    .space {
+      margin-right: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 1rem;
+    }
+  
+    a {
+      font-size: 0.8rem;
+    }
+  
+    #text {
+      font-size: 1rem;
+    }
+  }
+  
